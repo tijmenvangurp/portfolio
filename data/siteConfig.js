@@ -133,10 +133,10 @@ module.exports = {
     twitter: 'https://twitter.com/tijmenvangurp',
     linkedin: 'https://www.linkedin.com/in/tijmenvangurp/',
     github: 'https://github.com/tijmenvangurp',
-    email: 'tijmenvangurp@gmaio.com',
+    email: 'tijmenvangurp@gmail.com',
   },
   siteUrl: 'https://tijmenvangurp.nl',
-  pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
+  pathPrefix: '', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
   googleAnalyticsId: 'UA-000000000-1',
   background_color: '#ffffff',
