@@ -138,7 +138,7 @@ module.exports = {
   siteUrl: 'https://tijmenvangurp.nl',
   pathPrefix: '', // Note: it must *not* have a trailing slash. Note: must be uncommented in gatsby-config.js when not empty
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-000000000-1',
+  googleAnalyticsId: 'UA-22233147-1',
   background_color: '#ffffff',
   secondaryBackGround: '#F5F5F5',
   theme_color: '#25303B',
