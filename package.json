@@ -1,0 +1,23 @@
+{
+  "name": "tijmenvangurpnl",
+  "version": "1.0.0",
+  "description": "Website Tijmen van Gurp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tijmenvangurp/tijmenvangurpnl.git"
+  },
+  "keywords": [
+    "website",
+    "personal"
+  ],
+  "author": "Tijmen van Gurp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tijmenvangurp/tijmenvangurpnl/issues"
+  },
+  "homepage": "https://github.com/tijmenvangurp/tijmenvangurpnl#readme"
+}
