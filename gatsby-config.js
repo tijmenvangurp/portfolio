@@ -17,7 +17,7 @@ module.exports = {
       options: {
         name: config.siteTitle,
         short_name: config.siteTitle,
-        start_url: config.pathPrefix,
+        // start_url: config.pathPrefix, // commented out becuase not allowed to be empty
         background_color: config.background_color,
         theme_color: config.theme_color,
         display: config.display,

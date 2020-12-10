@@ -136,7 +136,7 @@ module.exports = {
     email: 'tijmenvangurp@gmail.com',
   },
   siteUrl: 'https://tijmenvangurp.nl',
-  pathPrefix: '', // Note: it must *not* have a trailing slash.
+  pathPrefix: '', // Note: it must *not* have a trailing slash. Note: must be uncommented in gatsby-config.js when not empty
   siteCover: '/images/cover.jpeg',
   googleAnalyticsId: 'UA-000000000-1',
   background_color: '#ffffff',
