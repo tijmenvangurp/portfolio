@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#25303B" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Hi! I'm Tijmen! | Tijmen van Gurp</title>
+    <meta
+      name="description"
+      content="Design technologist at Philips. Portfolio and background of Tijmen van Gurp."
+    />
+    <meta name="author" content="Tijmen van Gurp" />
+    <script>
+      ;(() => {
+        window.__onThemeChange = () => {}
+        function setTheme(theme) {
+          window.__theme = theme
+          preferredTheme = theme
+          document.body.className = theme
+          window.__onThemeChange(theme)
+        }
+        let preferredTheme
+        try {
+          preferredTheme = localStorage.getItem("theme")
+        } catch (error) {}
+        window.__setPreferredTheme = (theme) => {
+          setTheme(theme)
+          try {
+            localStorage.setItem("theme", theme)
+          } catch (error) {}
+        }
+        const darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
+        darkQuery.addEventListener("change", (event) => {
+          window.__setPreferredTheme(event.matches ? "dark" : "light")
+        })
+        setTheme(preferredTheme || (darkQuery.matches ? "dark" : "light"))
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
