@@ -1,55 +1,35 @@
 {
   "name": "tijmenvangurp.nl",
-  "version": "1.0.0",
+  "version": "3.0.0",
+  "private": true,
   "description": "Website Tijmen van Gurp",
-  "keywords": [
-    "website",
-    "personal"
-  ],
-  "homepage": "https://github.com/tijmenvangurp/tijmenvangurpnl#readme",
-  "bugs": {
-    "url": "https://github.com/tijmenvangurp/tijmenvangurpnl/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tijmenvangurp/tijmenvangurpnl.git"
-  },
+  "type": "module",
   "license": "ISC",
   "author": "Tijmen van Gurp",
-  "main": "index.js",
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && firebase deploy --only hosting",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "start": "npm run develop",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "build": "vite build",
+    "deploy": "vite build && firebase deploy --only hosting",
+    "dev": "vite",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@loadable/component": "^5.14.1",
-    "babel-plugin-styled-components": "^1.12.0",
-    "framer-motion": "2.9.5",
-    "gatsby": "^2.28.2",
-    "gatsby-image": "^2.7.0",
-    "gatsby-plugin-google-analytics": "^2.7.0",
-    "gatsby-plugin-manifest": "^2.8.0",
-    "gatsby-plugin-offline": "^3.6.0",
-    "gatsby-plugin-react-helmet": "^3.6.0",
-    "gatsby-plugin-sharp": "^2.10.1",
-    "gatsby-plugin-styled-components": "^3.6.0",
-    "gatsby-source-filesystem": "^2.7.0",
-    "gatsby-transformer-sharp": "^2.8.0",
-    "prop-types": "15.7.2",
-    "react": "17.0.1",
-    "react-awesome-styled-grid": "^3.0.12",
-    "react-dom": "17.0.1",
-    "react-helmet": "6.1.0",
-    "react-icons": "^4.1.0",
-    "react-switch": "5.0.1",
-    "simple-json-fetch": "1.0.1",
-    "styled-components": "^5.2.1"
+    "framer-motion": "^14.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.4",
+    "react-switch": "^7.1.0",
+    "styled-components": "^6.6.0"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
   }
 }
