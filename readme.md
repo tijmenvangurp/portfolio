@@ -37,10 +37,6 @@ Cloudflare Pages builds from `main`:
 No environment variables are needed. The SPA fallback (`/* -> /index.html`) is
 configured on the Pages project; unknown paths render the 404 route.
 
-`firebase.json` and `npm run deploy` are kept only as a transitional escape
-hatch while Firebase Hosting still serves the site. Remove them once the
-Cloudflare custom domain has been verified.
-
 ## Structure
 
 ```text
